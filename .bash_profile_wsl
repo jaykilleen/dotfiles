@@ -1,0 +1,5 @@
+# Add this to your ~/.bash_profile in the Windows Subsystem for Linux so that the bashrc
+# in your Windows 10 home directory is sourced.
+
+# I do this because I keep project files in Windows and just use WSL for the Linux features.
+source "/mnt/c/Users/Jay/.bashrc"
