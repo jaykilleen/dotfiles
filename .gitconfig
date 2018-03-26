@@ -1,0 +1,20 @@
+[color]
+  ui = true
+
+[user]
+  name = jaykilleen
+  email = me@jaykilleen.com
+
+[alias]
+  pom = push origin master
+  pod = push origin develop
+  a = add
+  c = commit -m
+  s = status
+  aa = !git add -u && git add . && git status
+  b = branch
+  co = checkout
+  deploy = !git push origin develop && git push origin master && cap production deploy
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  aliases = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color

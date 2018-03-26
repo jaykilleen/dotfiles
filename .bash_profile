@@ -10,3 +10,6 @@ alias rbash='. ~/.bash_profile'
 # colours for `ls` command
 # https://github.com/jonathf/gls
 alias ls='gls --color=auto'
+
+# edit my gitconfig
+alias egit="vim ~/.gitconfig"; echo "'egit' to modify your .gitconfig"
