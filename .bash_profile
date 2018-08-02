@@ -13,3 +13,6 @@ alias ls='gls --color=auto'
 
 # edit my gitconfig
 alias egit="vim ~/.gitconfig"; echo "'egit' to modify your .gitconfig"
+
+# follow the steps in this article to make Windows Bash Shell in Subsystem for Windows look like Ubuntu
+# https://medium.com/@jgarijogarde/make-bash-on-ubuntu-on-windows-10-look-like-the-ubuntu-terminal-f7566008c5c2
