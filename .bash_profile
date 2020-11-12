@@ -23,6 +23,12 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 
+# Fixes bashrc not being sourced when WSL is launched
+# https://github.com/microsoft/WSL/issues/2067
+if [[ -f ~/.bashrc ]] ; then
+  . ~/.bashrc
+fi
+
 # Some nice console formatting
 PS1='\[$(tput bold)\]\[\033[38;5;1m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;11m\]@\h:\[$(tput sgr0)\]\[\033[38;5;33m\][\[$(tput sgr0)\]\[\033[38;5;39m\]\w\[$(tput sgr0)\]\[\033[38;5;33m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]'
 
