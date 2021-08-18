@@ -18,3 +18,4 @@
   unstage = reset HEAD --
   last = log -1 HEAD
   aliases = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color
+  v = ! git tag -l | sort -V
